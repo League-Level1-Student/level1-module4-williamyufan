@@ -7,9 +7,28 @@ package _07_fortune_teller;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class Magic8Ball {
 
 	// 1. Make a main method that includes all the steps below….
+	public static void main(String[] args) {
+		int integer=new Random().nextInt(4);
+		System.out.println(integer);
+		JOptionPane.showInputDialog("Input a question!");
+		if(integer==0) {
+			System.out.println("Yes");
+		}
+		else if(integer==1) {
+			System.out.println("No");
+		}
+		else if(integer==2) {
+			System.out.println("Maybe you should ask Google?");
+		}
+		else if(integer==3) {
+			System.out.println("Maybe");
+		}
+	}
 
 	// 2. Make a variable that will hold a random number and put a random number into this variable using "new Random().nextInt(4)"
 
